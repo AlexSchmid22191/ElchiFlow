@@ -16,7 +16,7 @@ from src.Drivers.TestDevices import *
 
 # TODO: Implement some notification system for serial failures
 
-TEST_MODE = True
+TEST_MODE = False
 
 
 class MassflowControlEngine:
