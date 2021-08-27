@@ -3,7 +3,7 @@
 ProjectFileVersion = 1.1
 [General]
 Program name = ElchiFlow
-Program version = 1.0
+Program version = 1.0.1
 Windows 2000 = 0
 Windows XP = 0
 Windows Server 2003 = 0
@@ -75,6 +75,15 @@ Execdlls = 0
 [Languages]
 1
 [Files/Dirs]
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\QtInterface
+N/A
+[Folder]
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\setuptools-57.4.0.dist-info
+N/A
+[Folder]
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\shiboken2
+N/A
+[Folder]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\tcl
 N/A
 [Folder]
@@ -379,15 +388,6 @@ C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\pyinstaller-4.5.1.dist-in
 N/A
 [Folder]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\PySide2
-N/A
-[Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\QtInterface
-N/A
-[Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\setuptools-57.4.0.dist-info
-N/A
-[Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\shiboken2
 N/A
 [Folder]
 [Licence_Begin]

@@ -6,8 +6,8 @@ import threading
 
 class Valvolino(serial.Serial, base.AbstractValveController):
     """Driver class for Valvolino Controller"""
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self, port):
+        super().__init__(port=port, timeout=0.5, baudrate=9600)
         self.channels = 4
         self.com_lock = threading.Lock()
 
@@ -19,6 +19,7 @@ class Valvolino(serial.Serial, base.AbstractValveController):
             self.write(b'\x02')
             self.write(string.encode())
             self.write(b'\x0D')
+            self.readline()
 
     def read_valve_state(self, channel):
         """Read state of a valve"""

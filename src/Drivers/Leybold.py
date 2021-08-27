@@ -7,7 +7,7 @@ import src.Drivers.AbstractBaseClasses as base
 
 class Center(serial.Serial, base.AbstractPressureSensor, abc.ABC):
     def __init__(self, port,  *args, **kwargs):
-        super().__init__(self, port, timeout=1.5, baudrate=9600)
+        super().__init__(port, timeout=1.5, baudrate=9600)
         self.com_lock = threading.Lock()
         time.sleep(1)
         with self.com_lock:
