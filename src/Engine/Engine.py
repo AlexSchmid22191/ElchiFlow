@@ -16,7 +16,7 @@ from src.Drivers.TestDevices import *
 
 # TODO: Implement some notification system for serial failures
 
-TEST_MODE = False
+TEST_MODE = True
 
 
 class MassflowControlEngine:
@@ -71,7 +71,8 @@ class MassflowControlEngine:
 
     def connect_device(self, device_type, device, port):
         try:
-            self.devices[device_type] = self.device_types[device_type][device](port)
+            self.devices[device_type] = self.device_types[device_type][device](port=port)
+            time.sleep(1)
             if device_type == 'Mass Flow Controller':
                 self.get_flow_set()
             for topic, function in self.device_functions[device_type].items():
