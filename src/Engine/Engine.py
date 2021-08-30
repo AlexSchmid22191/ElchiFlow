@@ -10,7 +10,7 @@ from serial import SerialException
 
 from src.Drivers.ElchWorks import Ventolino, Valvolino
 from src.Drivers.Aera import ROD4
-from src.Drivers.Leybold import CenterOne
+from src.Drivers.Leybold import CenterOne, CenterTwo, CenterThree
 from src.Engine.ThreadDecorators import Worker
 from src.Drivers.TestDevices import *
 
@@ -25,7 +25,8 @@ class MassflowControlEngine:
 
         self.device_types = {'Mass Flow Controller': {'Ventolino': Ventolino, 'Area ROD-4': ROD4},
                              'Valve Controller': {'Valvolino': Valvolino},
-                             'Pressure Sensor': {'Center One': CenterOne}}
+                             'Pressure Sensor': {'Center One': CenterOne, 'Center Two': CenterTwo,
+                                                 'Center Three': CenterThree}}
         if TEST_MODE:
             self.available_ports.update({'COM Test': 'Test Port'})
             self.device_types['Mass Flow Controller'].update({'Test MFC': TestMFC})

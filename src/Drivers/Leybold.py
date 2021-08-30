@@ -22,7 +22,7 @@ class Center(serial.Serial, base.AbstractPressureSensor, abc.ABC):
             self.readline()
             self.write('\x05\n'.encode())
             answer = self.readline().decode().split(',')
-            if answer[0] == 0:
+            if answer[0] == '0':
                 return float(answer[1])
 
 
