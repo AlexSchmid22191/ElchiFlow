@@ -23,3 +23,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# TODO: Lin /Log scale
+# Autoscale
+# Log modus
+# Add sensor mode bla
