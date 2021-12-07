@@ -14,8 +14,6 @@ from src.Drivers.Leybold import CenterOne, CenterTwo, CenterThree
 from src.Engine.ThreadDecorators import Worker
 from src.Drivers.TestDevices import *
 
-# TODO: Implement some notification system for serial failures
-
 TEST_MODE = False
 
 
@@ -161,8 +159,9 @@ class MassflowControlEngine:
                                                                             'Pressure Sensor'].channels)]) + '\n')
                 for timestamp, datapoint in sorted_data.items():
                     timestring = datetime.datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%dT%H:%M:%S')
+                    # Godawful, I hate this
                     file.write(f'{timestring}, {timestamp}' +
-                               ft.reduce(lambda x, y: x + y, [f', {datapoint.get(channel, math.nan):.3e}'
+                               ft.reduce(lambda x, y: x + y, [f', {datapoint.get(channel, math.nan) if datapoint.get(channel, math.nan) else math.nan :.3e}'
                                                               for channel in datapoint.keys()]) + '\n')
 
         worker = Worker(_work)

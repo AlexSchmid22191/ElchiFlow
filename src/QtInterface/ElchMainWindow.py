@@ -222,7 +222,8 @@ class ElchPressureBar(QWidget):
         self.timer.start(1000)
 
     def update_pressure(self, channel, pressure, runtime):
-        self.values[channel].setText(f'{self.scientific_exponents(pressure)} mbar')
+        if pressure:
+            self.values[channel].setText(f'{self.scientific_exponents(pressure)} mbar')
 
     @staticmethod
     def scientific_exponents(number):

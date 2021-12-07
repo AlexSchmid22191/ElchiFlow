@@ -53,7 +53,7 @@ class TestPressureSensor(base.AbstractPressureSensor):
         print(f'Test Controller connected at port {port}')
 
     def read_pressure(self, channel):
-        return time.time() % (10 ** int(time.time() % 3))
+        return time.time() % (10 ** int(time.time() % 3)) if int(time.time()) % 5 else None
 
     def close(self):
         pass
