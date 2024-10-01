@@ -1,12 +1,9 @@
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
-import matplotlib.font_manager as fm
-import matplotlib.ticker
-from matplotlib.figure import Figure
-import matplotlib.style
-import matplotlib.pyplot as plt
-import numpy as np
-import pubsub.pub
 import matplotlib.font_manager as font_manager
+import matplotlib.style
+import matplotlib.ticker
+import numpy as np
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
+from matplotlib.figure import Figure
 
 
 class ElchPlot(FigureCanvasQTAgg):
@@ -39,10 +36,11 @@ class ElchPlot(FigureCanvasQTAgg):
         self.plots[int(plot.objectName())].set_linestyle('-' if visible else '')
 
     def start_plotting(self, plotting):
-        if plotting:
-            pubsub.pub.subscribe(self.add_data_point, 'engine.answer.pressure')
-        else:
-            pubsub.pub.unsubscribe(self.add_data_point, 'engine.answer.pressure')
+        pass
+        # if plotting:
+        #     pubsub.pub.subscribe(self.add_data_point, 'engine.answer.pressure')
+        # else:
+        #     pubsub.pub.unsubscribe(self.add_data_point, 'engine.answer.pressure')
 
     def clear_plot(self):
         for plot in self.plots.values():

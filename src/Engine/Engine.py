@@ -1,18 +1,18 @@
-import functools as ft
 import datetime
+import functools as ft
 import math
 
 import pubsub.pub
 import serial.tools.list_ports
-from PySide2.QtCore import QThreadPool
+from PySide6.QtCore import QThreadPool
 from pubsub.pub import sendMessage
 from serial import SerialException
 
-from src.Drivers.ElchWorks import Ventolino, Valvolino
 from src.Drivers.Aera import ROD4
+from src.Drivers.ElchWorks import Ventolino, Valvolino
 from src.Drivers.Leybold import CenterOne, CenterTwo, CenterThree
-from src.Engine.ThreadDecorators import Worker
 from src.Drivers.TestDevices import *
+from src.Engine.ThreadDecorators import Worker
 
 TEST_MODE = False
 
@@ -161,8 +161,9 @@ class MassflowControlEngine:
                     timestring = datetime.datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%dT%H:%M:%S')
                     # Godawful, I hate this
                     file.write(f'{timestring}, {timestamp}' +
-                               ft.reduce(lambda x, y: x + y, [f', {datapoint.get(channel, math.nan) if datapoint.get(channel, math.nan) else math.nan :.3e}'
-                                                              for channel in datapoint.keys()]) + '\n')
+                               ft.reduce(lambda x, y: x + y, [
+                                   f', {datapoint.get(channel, math.nan) if datapoint.get(channel, math.nan) else math.nan :.3e}'
+                                   for channel in datapoint.keys()]) + '\n')
 
         worker = Worker(_work)
         self.pool.start(worker)

@@ -1,6 +1,5 @@
-from PySide2.QtGui import QIcon
-from PySide2.QtWidgets import QApplication
-from PySide2.QtWinExtras import QtWin
+from PySide6.QtGui import QIcon
+from PySide6.QtWidgets import QApplication
 
 from src.Engine import topic_def
 from src.Engine.Engine import MassflowControlEngine
@@ -13,7 +12,6 @@ setTopicUnspecifiedFatal(True)
 
 
 def main():
-    QtWin.setCurrentProcessExplicitAppUserModelID('elchworks.elchiflow.1.0')
     app = QApplication()
     app.setWindowIcon(QIcon('Icons/Logo.ico'))
     engine = MassflowControlEngine()
