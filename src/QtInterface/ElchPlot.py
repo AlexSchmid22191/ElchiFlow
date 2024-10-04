@@ -5,6 +5,8 @@ import numpy as np
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
 
+from src.Signals import signals_engine
+
 
 class ElchPlot(FigureCanvasQTAgg):
     def __init__(self):
@@ -36,11 +38,10 @@ class ElchPlot(FigureCanvasQTAgg):
         self.plots[int(plot.objectName())].set_linestyle('-' if visible else '')
 
     def start_plotting(self, plotting):
-        pass
-        # if plotting:
-        #     pubsub.pub.subscribe(self.add_data_point, 'engine.answer.pressure')
-        # else:
-        #     pubsub.pub.unsubscribe(self.add_data_point, 'engine.answer.pressure')
+        if plotting:
+            signals_engine.pressure.connect(self.add_data_point)
+        else:
+            signals_engine.pressure.disconnect(self.add_data_point)
 
     def clear_plot(self):
         for plot in self.plots.values():

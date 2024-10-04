@@ -3,7 +3,7 @@ import math
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QLabel
-
+from src.Signals import signals_gui, signals_engine
 
 class ElchPressureBar(QWidget):
     def __init__(self, *args, **kwargs):
@@ -32,9 +32,10 @@ class ElchPressureBar(QWidget):
         self.setLayout(hbox)
 
         self.timer = QTimer(parent=self)
+        self.timer.timeout.connect(signals_gui.get_pressure.emit)
         self.timer.start(1000)
-        # TODO: Send request for pressures when timer fires
-        # TODO Handle answered pressures
+
+        signals_engine.pressure.connect(self.update_pressure)
 
     def update_pressure(self, channel, pressure, runtime):
         if pressure:

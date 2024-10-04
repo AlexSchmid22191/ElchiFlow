@@ -1,7 +1,5 @@
 from PySide6.QtCore import QObject, Signal
 
-from src.Engine.ThreadDecorators import Signals
-
 
 class GuiSignals(QObject):
     connect_device = Signal(str, str, str)
