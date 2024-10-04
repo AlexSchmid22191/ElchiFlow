@@ -13,11 +13,20 @@ ElchPressureBar QLabel#value{color: #7b8ccb; font: 14pt "Roboto";}
 
 
 /*Styliong of the Title Bar*/
+ElchTitlebar QToolButton#About{background: url(Icons/About.png) center no-repeat; border:none;}
+ElchTitlebar QToolButton#About:hover{background:url(Icons/About_Hover.png) center no-repeat ; border: none}
 ElchTitlebar QToolButton#Close{background: url(Icons/Quit.png) center no-repeat; border:none;}
 ElchTitlebar QToolButton#Close:hover{background:url(Icons/Quit_Hover.png) center no-repeat ; border: none}
 ElchTitlebar QToolButton#Minimize{background: url(Icons/Minimize.png) center no-repeat; border:none;}
 ElchTitlebar QToolButton#Minimize:hover{background: url(Icons/Minimize_Hover.png) center no-repeat ; border: none}
 
+QDialog{background-color:#2A2D56; border:1px solid #15183b}
+QDialog QLabel{color: #7b8ccb; font: 11pt "Roboto Light";}
+QDialog QLabel#Header{font: 14pt "Roboto"}
+QDialog QPushButton{background:#2A2D56; color:#7b8ccb; border:1px solid #15183b; padding: 2px; font: 11pt "Roboto Light";}
+QDialog QPushButton:hover{background: #434778; color: #7b8ccb}
+QDialog QPushButton:checked:hover{background: #434778; color: #7b8ccb}
+QDialog QPushButton:checked{background: #434778; color: #7b8ccb}
 
 /*Styling of the Ribbon*/
 ElchRibbon{background-color:#2A2D56;}
