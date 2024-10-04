@@ -25,6 +25,7 @@ class EngineSignals(QObject):
     flow_set = Signal(int, float)
     flow_is = Signal(int, float)
     pressure = Signal(int, float, float)
+    con_error = Signal()
 
 
 signals_engine = EngineSignals()

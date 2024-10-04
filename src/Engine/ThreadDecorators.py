@@ -3,7 +3,7 @@ from PySide6.QtCore import Signal, QRunnable, QObject
 
 
 class Signals(QObject):
-    over = Signal(object)
+    over = Signal(object, tuple, dict)
     started = Signal(object)
     con_fail = Signal(object)
     imp_fail = Signal(object)
@@ -27,4 +27,4 @@ class Worker(QRunnable):
             print(imp_ex)
             self.signals.con_fail.emit(imp_ex)
         else:
-            self.signals.over.emit(result)
+            self.signals.over.emit(result, self.args, self.kwargs)

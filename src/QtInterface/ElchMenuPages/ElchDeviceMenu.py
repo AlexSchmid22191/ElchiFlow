@@ -1,7 +1,8 @@
-import pubsub.pub
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLabel, QComboBox, \
     QButtonGroup
+
+from src.Signals import signals_gui, signals_engine
 
 
 class ElchDeviceMenu(QWidget):
@@ -36,15 +37,15 @@ class ElchDeviceMenu(QWidget):
             vbox.addSpacing(20)
 
         vbox.addWidget(self.refresh_button)
-        self.refresh_button.clicked.connect(lambda: pubsub.pub.sendMessage('gui.con.get_ports'))
+        self.refresh_button.clicked.connect(signals_gui.get_ports.emit)
         vbox.addStretch()
         self.setLayout(vbox)
 
-        pubsub.pub.subscribe(listener=self.update_ports, topicName='engine.answer.ports')
-        pubsub.pub.subscribe(listener=self.update_devices, topicName='engine.answer.devices')
+        signals_engine.answer_ports.connect(self.update_ports)
+        signals_engine.answer_devices.connect(self.update_devices)
 
-        pubsub.pub.sendMessage('gui.con.get_ports')
-        pubsub.pub.sendMessage('gui.con.get_devices')
+        signals_gui.get_ports.emit()
+        signals_gui.get_devices.emit()
 
     def update_ports(self, ports):
         """Populate the controller and sensor menus with lists of device names and ports"""
@@ -66,6 +67,6 @@ class ElchDeviceMenu(QWidget):
         device = self.device_menus[key].currentText()
 
         if state:
-            pubsub.pub.sendMessage('gui.con.connect_device', device_type=key, device=device, port=port)
+            signals_gui.connect_device.emit(key, device, port)
         else:
-            pubsub.pub.sendMessage('gui.con.disconnect_device', device_type=key)
+            signals_gui.disconnect_device.emit(key)

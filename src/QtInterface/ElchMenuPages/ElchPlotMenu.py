@@ -1,7 +1,7 @@
 import functools
 
-import pubsub.pub
 from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLabel, QButtonGroup, QFileDialog, QCheckBox
+from src.Signals import signals_gui
 
 
 class ElchPlotMenu(QWidget):
@@ -33,13 +33,16 @@ class ElchPlotMenu(QWidget):
         self.setLayout(vbox)
 
     def start_stop_plotting(self):
-        pubsub.pub.sendMessage('gui.plot.start' if self.buttons['Start'].isChecked() else 'gui.plot.stop')
+        if self.buttons['Start'].isChecked():
+            signals_gui.start_plot.emit()
+        else:
+            signals_gui.stop_plot.emit()
 
     def clear_pplot(self):
-        pubsub.pub.sendMessage('gui.plot.clear')
+        signals_gui.clear_plot.emit()
         if self.buttons['Start'].isChecked():
             self.buttons['Start'].click()
 
     def export_data(self):
         if (file_path := QFileDialog.getSaveFileName(self, 'Save as...', 'Logs/Log.csv', 'CSV (*.csv)')[0]) != '':
-            pubsub.pub.sendMessage('gui.plot.export', filepath=file_path)
+            signals_gui.export_plot.emit(file_path)

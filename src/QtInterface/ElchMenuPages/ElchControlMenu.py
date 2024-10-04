@@ -1,13 +1,17 @@
 import functools
 
-import pubsub.pub
 from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QDoubleSpinBox, QLabel, QButtonGroup, QCheckBox, \
     QHBoxLayout, QGridLayout
+from PySide6.QtCore import Qt
+
+
+from src.Signals import signals_engine, signals_gui
 
 
 class ElchControlMenu(QWidget):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.setAttribute(Qt.WA_StyledBackground, True)
 
         vbox = QVBoxLayout()
         vbox.setSpacing(10)
@@ -41,23 +45,23 @@ class ElchControlMenu(QWidget):
         vbox.addSpacing(10)
 
         refresh_button = QPushButton(text='Refresh', objectName='Refresh')
-        refresh_button.clicked.connect(lambda: pubsub.pub.sendMessage('gui.get.valve_state'))
-        refresh_button.clicked.connect(lambda: pubsub.pub.sendMessage('gui.get.flow_set'))
+        refresh_button.clicked.connect(signals_gui.get_valve_state.emit)
+        refresh_button.clicked.connect(signals_gui.get_flow_set.emit)
         vbox.addWidget(refresh_button)
 
         vbox.addStretch()
         self.setLayout(vbox)
 
-        pubsub.pub.subscribe(self.update_valve_state, 'engine.answer.valve_state')
-        pubsub.pub.subscribe(self.update_set_flow, 'engine.answer.flow_set')
+        signals_engine.valve_state.connect(self.update_valve_state)
+        signals_engine.flow_set.connect(self.update_set_flow)
 
     @staticmethod
     def set_flow(flow, channel):
-        pubsub.pub.sendMessage('gui.set.flow', channel=channel, flow=flow)
+        signals_gui.set_flow.emit(channel, flow)
 
     @staticmethod
     def set_valve_state(source, state):
-        pubsub.pub.sendMessage('gui.set.valve_state', channel=int(source.objectName()), state=state)
+        signals_gui.set_valve_state.emit(int(source.objectName()), state)
 
     def update_valve_state(self, channel, state):
         assert 1 <= channel <= 4, f'Invalid channel: {channel}'

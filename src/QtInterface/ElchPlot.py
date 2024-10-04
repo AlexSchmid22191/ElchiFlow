@@ -1,4 +1,4 @@
-import matplotlib.font_manager as font_manager
+import matplotlib.font_manager as fm
 import matplotlib.style
 import matplotlib.ticker
 import numpy as np
@@ -7,18 +7,27 @@ from matplotlib.figure import Figure
 
 from src.Signals import signals_engine
 
+# TODO: Add zoom functionality
+
 
 class ElchPlot(FigureCanvasQTAgg):
     def __init__(self):
-        font_dir = ['src/Fonts']
-        for font in font_manager.findSystemFonts(font_dir):
-            font_manager.fontManager.addfont(font)
         matplotlib.style.use('QtInterface/App.mplstyle')
         super().__init__(Figure(figsize=(8, 6)))
 
         self.axes = self.figure.subplots()
-        self.axes.set_xlabel('Time (s)')
-        self.axes.set_ylabel('Pressure (mbar)')
+        self.axes.set_xlabel('Time (s)', fontproperties=fm.FontProperties(fname='Fonts/Roboto-Regular.ttf', size=14))
+        self.axes.set_ylabel('Pressure (mbar)',
+                             fontproperties=fm.FontProperties(fname='Fonts/Roboto-Regular.ttf', size=14))
+
+        self.axes.set_xticks(range(11))
+        self.axes.set_yticks(range(11))
+        self.axes.set_xticklabels(range(11), fontproperties=fm.FontProperties(fname='Fonts/Roboto-Light.ttf', size=11))
+        self.axes.set_yticklabels(range(11), fontproperties=fm.FontProperties(fname='Fonts/Roboto-Light.ttf', size=11))
+        self.axes.xaxis.set_major_locator(matplotlib.ticker.AutoLocator())
+        self.axes.yaxis.set_major_locator(matplotlib.ticker.AutoLocator())
+        self.axes.xaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
+        self.axes.yaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
 
         self.colors = {1: '#9686f8', 2: '#f488f9', 3: '#86f9de'}
         self.plots = {key: self.axes.plot([], color=self.colors[key], marker='')[0] for key in range(1, 4)}
