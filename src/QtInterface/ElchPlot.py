@@ -29,7 +29,7 @@ class ElchPlot(FigureCanvasQTAgg):
         self.axes.xaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
         self.axes.yaxis.set_major_formatter(matplotlib.ticker.ScalarFormatter())
 
-        self.colors = {1: '#9686f8', 2: '#f488f9', 3: '#86f9de'}
+        self.colors = {1: '#f488f9', 2: '#86f8ab', 3: '#faf0b1'}
         self.plots = {key: self.axes.plot([], color=self.colors[key], marker='')[0] for key in range(1, 4)}
 
         self.figure.tight_layout()
