@@ -1,4 +1,5 @@
 import time
+import random
 import threading
 import src.Drivers.AbstractBaseClasses as base
 
@@ -35,12 +36,12 @@ class TestMFC(base.AbstractMassFlowController):
 
     def read_is_flow(self, channel):
         with self.com_lock:
-            time.sleep(0.01)
+            time.sleep(random.randint(1, 10) * 1e-3)
             return self.flow_set[channel] + (time.time() % 0.01) * 10
 
     def read_set_flow(self, channel):
         with self.com_lock:
-            time.sleep(0.01)
+            time.sleep(random.randint(1, 10) * 1e-3)
             return self.flow_set[channel]
 
     def close(self):

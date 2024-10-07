@@ -3,8 +3,7 @@
 ProjectFileVersion = 1.1
 [General]
 Program name = ElchiFlow
-Program version = 1.0.1
-Windows 2000 = 0
+Program version = 2.0
 Windows XP = 0
 Windows Server 2003 = 0
 Windows Vista = 0
@@ -13,6 +12,9 @@ Windows 7 = 0
 Windows 8 = 0
 Windows 10 = 1
 Windows Server 2016 = 0
+Windows Server 2019 = 0
+Windows Server 2022 = 0
+Windows 11 = 1
 DoNotCheckOS = 0
 Company name = ElchWorks
 Website = https://
@@ -35,7 +37,7 @@ Uninstaller filename = Uninstall
 UseCustomDisplayIcon = 0
 CustomDisplayIcon = <InstallPath>\
 [Licence]
-Licence dialog = 0
+Licence dialog = 1
 [Finish]
 Sart program = 1
 Reboot computer = 0
@@ -74,296 +76,222 @@ RunProgs = 0
 Execdlls = 0
 [Languages]
 1
+2
 [Files/Dirs]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\QtInterface
 N/A
 [Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\setuptools-57.4.0.dist-info
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\setuptools
 N/A
 [Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\shiboken2
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\shiboken6
 N/A
 [Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\tcl
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\typeguard-4.3.0.dist-info
 N/A
 [Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\tcl8
-N/A
-[Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\tk
-N/A
-[Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\wheel-0.37.0.dist-info
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\wheel-0.43.0.dist-info
 N/A
 [Folder]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_asyncio.pyd
-62.1 KB
+69.8 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_bz2.pyd
-84.1 KB
+83.3 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_ctypes.pyd
-123.1 KB
+122.3 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_decimal.pyd
-262.6 KB
+251.3 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_hashlib.pyd
-45.1 KB
+64.8 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_lzma.pyd
-247.1 KB
+156.3 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_multiprocessing.pyd
-28.6 KB
+34.8 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_overlapped.pyd
-44.6 KB
+54.8 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_queue.pyd
-27.6 KB
+31.8 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_socket.pyd
-77.1 KB
+81.8 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_ssl.pyd
-150.1 KB
+174.3 KB
 pyd
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_tkinter.pyd
-62.6 KB
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_uuid.pyd
+25.3 KB
+pyd
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\_wmi.pyd
+36.8 KB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-console-l1-1-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-datetime-l1-1-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-debug-l1-1-0.dll
-20.1 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-errorhandling-l1-1-0.dll
-20 KB
+20.5 KB
+dll
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-fibers-l1-1-0.dll
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-file-l1-1-0.dll
-23.5 KB
+24.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-file-l1-2-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-file-l2-1-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-handle-l1-1-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-heap-l1-1-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-interlocked-l1-1-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-libraryloader-l1-1-0.dll
-21.1 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-localization-l1-2-0.dll
-22.5 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-memory-l1-1-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-namedpipe-l1-1-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-processenvironment-l1-1-0.dll
-21 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-processthreads-l1-1-0.dll
-22 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-processthreads-l1-1-1.dll
-20.6 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-profile-l1-1-0.dll
-19.5 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-rtlsupport-l1-1-0.dll
-20.6 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-string-l1-1-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-synch-l1-1-0.dll
-22 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-synch-l1-2-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-sysinfo-l1-1-0.dll
-21 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-timezone-l1-1-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-core-util-l1-1-0.dll
-20 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-conio-l1-1-0.dll
-21 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-convert-l1-1-0.dll
-24 KB
+24.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-environment-l1-1-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-filesystem-l1-1-0.dll
-22 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-heap-l1-1-0.dll
-21 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-locale-l1-1-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-math-l1-1-0.dll
-28.8 KB
+28.5 KB
+dll
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-private-l1-1-0.dll
+72.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-process-l1-1-0.dll
-21.1 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-runtime-l1-1-0.dll
 24.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-stdio-l1-1-0.dll
-26 KB
+24.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-string-l1-1-0.dll
-26 KB
+24.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-time-l1-1-0.dll
-22.5 KB
+20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\api-ms-win-crt-utility-l1-1-0.dll
 20.5 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\base_library.zip
-758.9 KB
+1.3 MB
 zip
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\d3dcompiler_47.dll
-4.3 MB
-dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\ElchiFlow.exe
-4.8 MB
+8.5 MB
 exe
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\ElchiFlow.exe.manifest
-1.5 KB
-manifest
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\kiwisolver.cp38-win_amd64.pyd
-115 KB
-pyd
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libcrypto-1_1.dll
-3.3 MB
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libcrypto-3.dll
+5 MB
 dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libEGL.dll
-24.5 KB
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libffi-8.dll
+38.8 KB
 dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libffi-7.dll
-32 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libGLESv2.dll
-3.2 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libopenblas.XWYDX2IKJW2NMTWSFYNGFUWKQU3LYTCZ.gfortran-win_amd64.dll
-32.9 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libssl-1_1.dll
-678 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\MSVCP140.dll
-603.8 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\MSVCP140_1.dll
-30.8 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\opengl32sw.dll
-20 MB
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\libssl-3.dll
+768.8 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\pyexpat.pyd
-184.6 KB
+197.3 KB
 pyd
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\pyside2.abi3.dll
-153.5 KB
-dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\python3.dll
-57.6 KB
+66.8 KB
 dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\python38.dll
-4 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Core.dll
-5.7 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5DBus.dll
-426.5 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Gui.dll
-6.7 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Network.dll
-1.3 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Pdf.dll
-4.3 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Qml.dll
-3.4 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5QmlModels.dll
-428.5 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Quick.dll
-4 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Svg.dll
-323 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5VirtualKeyboard.dll
-2 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5WebSockets.dll
-146 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5Widgets.dll
-5.2 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Qt5WinExtras.dll
-231.5 KB
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\python312.dll
+6.6 MB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\select.pyd
-26.1 KB
+30.3 KB
 pyd
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\shiboken2.abi3.dll
-245 KB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\tcl86t.dll
-1.6 MB
-dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\tk86t.dll
-1.4 MB
-dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\ucrtbase.dll
-1002 KB
+1.1 MB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\unicodedata.pyd
-1 MB
+1.1 MB
 pyd
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\VCRUNTIME140.dll
-98.5 KB
+116.4 KB
 dll
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\VCRUNTIME140_1.dll
-43.3 KB
+48.4 KB
 dll
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\altgraph-0.17.dist-info
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\contourpy
 N/A
 [Folder]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Fonts
@@ -372,28 +300,35 @@ N/A
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\Icons
 N/A
 [Folder]
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\kiwisolver
+N/A
+[Folder]
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\License
+N/A
+[Folder]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\matplotlib
 N/A
 [Folder]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\numpy
 N/A
 [Folder]
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\numpy.libs
+N/A
+[Folder]
 C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\PIL
 N/A
 [Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\pubsub
-N/A
-[Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\pyinstaller-4.5.1.dist-info
-N/A
-[Folder]
-C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\PySide2
+C:\Users\Alex\PycharmProjects\ElchiFlow\dist\ElchiFlow\PySide6
 N/A
 [Folder]
 [Licence_Begin]
-114
-{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}}
-\viewkind4\uc1\pard\fs20\par
+22513
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\box\brdrdash\brdrw0 \cf1\highlight2\fs20\lang3079 Attribution-ShareAlike 4.0 International\line\line =======================================================================\line\line Creative Commons Corporation ("Creative Commons") is not a law firm and\line does not provide legal services or legal advice. Distribution of\line Creative Commons public licenses does not create a lawyer-client or\line other relationship. Creative Commons makes its licenses and related\line information available on an "as-is" basis. Creative Commons gives no\line warranties regarding its licenses, any material licensed under their\line terms and conditions, or any related information. Creative Commons\line disclaims all liability for damages resulting from their use to the\line fullest extent possible.\line\line Using Creative Commons Public Licenses\line\line Creative Commons public licenses provide a standard set of terms and\line conditions that creators and other rights holders may use to share\line original works of authorship and other material subject to copyright\line and certain other rights specified in the public license below. The\line following considerations are for informational purposes only, are not\line exhaustive, and do not form part of our licenses.\line\line      Considerations for licensors: Our public licenses are\line      intended for use by those authorized to give the public\line      permission to use material in ways otherwise restricted by\line      copyright and certain other rights. Our licenses are\line      irrevocable. Licensors should read and understand the terms\line      and conditions of the license they choose before applying it.\line      Licensors should also secure all rights necessary before\line      applying our licenses so that the public can reuse the\line      material as expected. Licensors should clearly mark any\line      material not subject to the license. This includes other CC-\line      licensed material, or material used under an exception or\line      limitation to copyright. More considerations for licensors:\line     wiki.creativecommons.org/Considerations_for_licensors\line\line      Considerations for the public: By using one of our public\line      licenses, a licensor grants the public permission to use the\line      licensed material under specified terms and conditions. If\line      the licensor's permission is not necessary for any reason--for\line      example, because of any applicable exception or limitation to\line      copyright--then that use is not regulated by the license. Our\line      licenses grant only permissions under copyright and certain\line      other rights that a licensor has authority to grant. Use of\line      the licensed material may still be restricted for other\line      reasons, including because others have copyright or other\line      rights in the material. A licensor may make special requests,\line      such as asking that all changes be marked or described.\line      Although not required by our licenses, you are encouraged to\line      respect those requests where reasonable. More considerations\line      for the public:\line     wiki.creativecommons.org/Considerations_for_licensees\line\line =======================================================================\line\line Creative Commons Attribution-ShareAlike 4.0 International Public\line License\line\line By exercising the Licensed Rights (defined below), You accept and agree\line to be bound by the terms and conditions of this Creative Commons\line Attribution-ShareAlike 4.0 International Public License ("Public\line License"). To the extent this Public License may be interpreted as a\line contract, You are granted the Licensed Rights in consideration of Your\line acceptance of these terms and conditions, and the Licensor grants You\line such rights in consideration of benefits the Licensor receives from\line making the Licensed Material available under these terms and\line conditions.\line\line\line Section 1 -- Definitions.\line\line   a. Adapted Material means material subject to Copyright and Similar\line      Rights that is derived from or based upon the Licensed Material\line      and in which the Licensed Material is translated, altered,\line      arranged, transformed, or otherwise modified in a manner requiring\line      permission under the Copyright and Similar Rights held by the\line      Licensor. For purposes of this Public License, where the Licensed\line      Material is a musical work, performance, or sound recording,\line      Adapted Material is always produced where the Licensed Material is\line      synched in timed relation with a moving image.\line\line   b. Adapter's License means the license You apply to Your Copyright\line      and Similar Rights in Your contributions to Adapted Material in\line      accordance with the terms and conditions of this Public License.\line\line   c. BY-SA Compatible License means a license listed at\line      creativecommons.org/compatiblelicenses, approved by Creative\line      Commons as essentially the equivalent of this Public License.\line\line   d. Copyright and Similar Rights means copyright and/or similar rights\line      closely related to copyright including, without limitation,\line      performance, broadcast, sound recording, and Sui Generis Database\line      Rights, without regard to how the rights are labeled or\line      categorized. For purposes of this Public License, the rights\line      specified in Section 2(b)(1)-(2) are not Copyright and Similar\line      Rights.\line\line   e. Effective Technological Measures means those measures that, in the\line      absence of proper authority, may not be circumvented under laws\line      fulfilling obligations under Article 11 of the WIPO Copyright\line      Treaty adopted on December 20, 1996, and/or similar international\line      agreements.\line\line   f. Exceptions and Limitations means fair use, fair dealing, and/or\line      any other exception or limitation to Copyright and Similar Rights\line      that applies to Your use of the Licensed Material.\line\line   g. License Elements means the license attributes listed in the name\line      of a Creative Commons Public License. The License Elements of this\line      Public License are Attribution and ShareAlike.\line\line   h. Licensed Material means the artistic or literary work, database,\line      or other material to which the Licensor applied this Public\line      License.\line\line   i. Licensed Rights means the rights granted to You subject to the\line      terms and conditions of this Public License, which are limited to\line      all Copyright and Similar Rights that apply to Your use of the\line      Licensed Material and that the Licensor has authority to license.\line\line   j. Licensor means the individual(s) or entity(ies) granting rights\line      under this Public License.\line\line   k. Share means to provide material to the public by any means or\line      process that requires permission under the Licensed Rights, such\line      as reproduction, public display, public performance, distribution,\line      dissemination, communication, or importation, and to make material\line      available to the public including in ways that members of the\line      public may access the material from a place and at a time\line      individually chosen by them.\line\line   l. Sui Generis Database Rights means rights other than copyright\line      resulting from Directive 96/9/EC of the European Parliament and of\line      the Council of 11 March 1996 on the legal protection of databases,\line      as amended and/or succeeded, as well as other essentially\line      equivalent rights anywhere in the world.\line\line   m. You means the individual or entity exercising the Licensed Rights\line      under this Public License. Your has a corresponding meaning.\line\line\line Section 2 -- Scope.\line\line   a. License grant.\line\line        1. Subject to the terms and conditions of this Public License,\line           the Licensor hereby grants You a worldwide, royalty-free,\line           non-sublicensable, non-exclusive, irrevocable license to\line           exercise the Licensed Rights in the Licensed Material to:\line\line             a. reproduce and Share the Licensed Material, in whole or\line                in part; and\line\line             b. produce, reproduce, and Share Adapted Material.\line\line        2. Exceptions and Limitations. For the avoidance of doubt, where\line           Exceptions and Limitations apply to Your use, this Public\line           License does not apply, and You do not need to comply with\line           its terms and conditions.\line\line        3. Term. The term of this Public License is specified in Section\line           6(a).\line\line        4. Media and formats; technical modifications allowed. The\line           Licensor authorizes You to exercise the Licensed Rights in\line           all media and formats whether now known or hereafter created,\line           and to make technical modifications necessary to do so. The\line           Licensor waives and/or agrees not to assert any right or\line           authority to forbid You from making technical modifications\line           necessary to exercise the Licensed Rights, including\line           technical modifications necessary to circumvent Effective\line           Technological Measures. For purposes of this Public License,\line           simply making modifications authorized by this Section 2(a)\line           (4) never produces Adapted Material.\line\line        5. Downstream recipients.\line\line             a. Offer from the Licensor -- Licensed Material. Every\line                recipient of the Licensed Material automatically\line                receives an offer from the Licensor to exercise the\line                Licensed Rights under the terms and conditions of this\line                Public License.\line\line             b. Additional offer from the Licensor -- Adapted Material.\line                Every recipient of Adapted Material from You\line                automatically receives an offer from the Licensor to\line                exercise the Licensed Rights in the Adapted Material\line                under the conditions of the Adapter's License You apply.\line\line             c. No downstream restrictions. You may not offer or impose\line                any additional or different terms or conditions on, or\line                apply any Effective Technological Measures to, the\line                Licensed Material if doing so restricts exercise of the\line                Licensed Rights by any recipient of the Licensed\line                Material.\line\line        6. No endorsement. Nothing in this Public License constitutes or\line           may be construed as permission to assert or imply that You\line           are, or that Your use of the Licensed Material is, connected\line           with, or sponsored, endorsed, or granted official status by,\line           the Licensor or others designated to receive attribution as\line           provided in Section 3(a)(1)(A)(i).\line\line   b. Other rights.\line\line        1. Moral rights, such as the right of integrity, are not\line           licensed under this Public License, nor are publicity,\line           privacy, and/or other similar personality rights; however, to\line           the extent possible, the Licensor waives and/or agrees not to\line           assert any such rights held by the Licensor to the limited\line           extent necessary to allow You to exercise the Licensed\line           Rights, but not otherwise.\line\line        2. Patent and trademark rights are not licensed under this\line           Public License.\line\line        3. To the extent possible, the Licensor waives any right to\line           collect royalties from You for the exercise of the Licensed\line           Rights, whether directly or through a collecting society\line           under any voluntary or waivable statutory or compulsory\line           licensing scheme. In all other cases the Licensor expressly\line           reserves any right to collect such royalties.\line\line\line Section 3 -- License Conditions.\line\line Your exercise of the Licensed Rights is expressly made subject to the\line following conditions.\line\line   a. Attribution.\line\line        1. If You Share the Licensed Material (including in modified\line           form), You must:\line\line             a. retain the following if it is supplied by the Licensor\line                with the Licensed Material:\line\line                  i. identification of the creator(s) of the Licensed\line                     Material and any others designated to receive\line                     attribution, in any reasonable manner requested by\line                     the Licensor (including by pseudonym if\line                     designated);\line\line                 ii. a copyright notice;\line\line                iii. a notice that refers to this Public License;\line\line                 iv. a notice that refers to the disclaimer of\line                     warranties;\line\line                  v. a URI or hyperlink to the Licensed Material to the\line                     extent reasonably practicable;\line\line             b. indicate if You modified the Licensed Material and\line                retain an indication of any previous modifications; and\line\line             c. indicate the Licensed Material is licensed under this\line                Public License, and include the text of, or the URI or\line                hyperlink to, this Public License.\line\line        2. You may satisfy the conditions in Section 3(a)(1) in any\line           reasonable manner based on the medium, means, and context in\line           which You Share the Licensed Material. For example, it may be\line           reasonable to satisfy the conditions by providing a URI or\line           hyperlink to a resource that includes the required\line           information.\line\line        3. If requested by the Licensor, You must remove any of the\line           information required by Section 3(a)(1)(A) to the extent\line           reasonably practicable.\line\line   b. ShareAlike.\line\line      In addition to the conditions in Section 3(a), if You Share\line      Adapted Material You produce, the following conditions also apply.\line\line        1. The Adapter's License You apply must be a Creative Commons\line           license with the same License Elements, this version or\line           later, or a BY-SA Compatible License.\line\line        2. You must include the text of, or the URI or hyperlink to, the\line           Adapter's License You apply. You may satisfy this condition\line           in any reasonable manner based on the medium, means, and\line           context in which You Share Adapted Material.\line\line        3. You may not offer or impose any additional or different terms\line           or conditions on, or apply any Effective Technological\line           Measures to, Adapted Material that restrict exercise of the\line           rights granted under the Adapter's License You apply.\line\line\line Section 4 -- Sui Generis Database Rights.\line\line Where the Licensed Rights include Sui Generis Database Rights that\line apply to Your use of the Licensed Material:\line\line   a. for the avoidance of doubt, Section 2(a)(1) grants You the right\line      to extract, reuse, reproduce, and Share all or a substantial\line      portion of the contents of the database;\line\line   b. if You include all or a substantial portion of the database\line      contents in a database in which You have Sui Generis Database\line      Rights, then the database in which You have Sui Generis Database\line      Rights (but not its individual contents) is Adapted Material,\line      including for purposes of Section 3(b); and\line\line   c. You must comply with the conditions in Section 3(a) if You Share\line      all or a substantial portion of the contents of the database.\line\line For the avoidance of doubt, this Section 4 supplements and does not\line replace Your obligations under this Public License where the Licensed\line Rights include other Copyright and Similar Rights.\line\line\line Section 5 -- Disclaimer of Warranties and Limitation of Liability.\line\line   a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE\line      EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS\line      AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF\line      ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,\line      IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,\line      WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR\line      PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,\line      ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT\line      KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT\line      ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\line\line   b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE\line      TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,\line      NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,\line      INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,\line      COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR\line      USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN\line      ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR\line      DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR\line      IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\line\line   c. The disclaimer of warranties and limitation of liability provided\line      above shall be interpreted in a manner that, to the extent\line      possible, most closely approximates an absolute disclaimer and\line      waiver of all liability.\line\line\line Section 6 -- Term and Termination.\line\line   a. This Public License applies for the term of the Copyright and\line      Similar Rights licensed here. However, if You fail to comply with\line      this Public License, then Your rights under this Public License\line      terminate automatically.\line\line   b. Where Your right to use the Licensed Material has terminated under\line      Section 6(a), it reinstates:\line\line        1. automatically as of the date the violation is cured, provided\line           it is cured within 30 days of Your discovery of the\line           violation; or\line\line        2. upon express reinstatement by the Licensor.\line\line      For the avoidance of doubt, this Section 6(b) does not affect any\line      right the Licensor may have to seek remedies for Your violations\line      of this Public License.\line\line   c. For the avoidance of doubt, the Licensor may also offer the\line      Licensed Material under separate terms or conditions or stop\line      distributing the Licensed Material at any time; however, doing so\line      will not terminate this Public License.\line\line   d. Sections 1, 5, 6, 7, and 8 survive termination of this Public\line      License.\line\line\line Section 7 -- Other Terms and Conditions.\line\line   a. The Licensor shall not be bound by any additional or different\line      terms or conditions communicated by You unless expressly agreed.\line\line   b. Any arrangements, understandings, or agreements regarding the\line      Licensed Material not stated herein are separate from and\line      independent of the terms and conditions of this Public License.\line\line\line Section 8 -- Interpretation.\line\line   a. For the avoidance of doubt, this Public License does not, and\line      shall not be interpreted to, reduce, limit, restrict, or impose\line      conditions on any use of the Licensed Material that could lawfully\line      be made without permission under this Public License.\line\line   b. To the extent possible, if any provision of this Public License is\line      deemed unenforceable, it shall be automatically reformed to the\line      minimum extent necessary to make it enforceable. If the provision\line      cannot be reformed, it shall be severed from this Public License\line      without affecting the enforceability of the remaining terms and\line      conditions.\line\line   c. No term or condition of this Public License will be waived and no\line      failure to comply consented to unless expressly agreed to by the\line      Licensor.\line\line   d. Nothing in this Public License constitutes or may be interpreted\line      as a limitation upon, or waiver of, any privileges and immunities\line      that apply to the Licensor or You, including from the legal\line      processes of any jurisdiction or authority.\line\line\line =======================================================================\line\line Creative Commons is not a party to its public\line licenses. Notwithstanding, Creative Commons may elect to apply one of\line its public licenses to material it publishes and in those instances\line will be considered the \f1\ldblquote\f0 Licensor.\f1\rdblquote\f0  The text of the Creative Commons\line public licenses is dedicated to the public domain under the CC0 Public\line Domain Dedication. Except for the limited purpose of indicating that\line material is shared under a Creative Commons public license or as\line otherwise permitted by the Creative Commons policies published at\line creativecommons.org/policies, Creative Commons does not authorize the\line use of the trademark "Creative Commons" or any other trademark or logo\line of Creative Commons without its prior written consent including,\line without limitation, in connection with any unauthorized modifications\line to any of its public licenses or any other arrangements,\line understandings, or agreements concerning use of licensed material. For\line the avoidance of doubt, this paragraph does not form part of the\line public licenses.\line\line Creative Commons may be contacted at creativecommons.org.\line\line\par
+
+\pard\lang1031\par
 }
  [Licence_End]
 [Registry]

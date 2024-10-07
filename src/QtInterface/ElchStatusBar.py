@@ -32,12 +32,10 @@ class ElchStatusBar(QWidget):
 
         self.timer = QTimer(parent=self)
         self.timer.timeout.connect(signals_gui.get_flow_is.emit)
-        self.timer.timeout.connect(signals_gui.get_flow_set.emit)
         self.timer.timeout.connect(signals_gui.get_valve_state.emit)
         self.timer.start(1000)
 
         signals_engine.flow_is.connect(self.update_flow_is)
-        signals_engine.flow_set.connect(self.update_flow_set)
         signals_engine.valve_state.connect(self.update_valve_state)
 
     def update_flow_is(self, channel, flow):
@@ -47,6 +45,3 @@ class ElchStatusBar(QWidget):
     def update_valve_state(self, channel, state):
         assert channel in self.channels, f'Invalid channel: {channel}'
         self.icons[channel].setPixmap(QPixmap('Icons/Valve_Glow.png') if state else QPixmap('Icons/Valve.png'))
-
-    def update_flow_set(self, channel, flow):
-        pass
