@@ -18,6 +18,8 @@ class ROD4(serial.Serial, base.AbstractMassFlowController):
             self.write(b'\x02')
             self.write(string.encode())
             self.write(b'\x0D')
+            answer = self.readline()
+            assert answer.decode == 'OK', 'No response from ROD4'
 
     def read_is_flow(self, channel):
         """Read flow, emit message with flow value or status message with error"""

@@ -40,3 +40,14 @@ class Ventolino(src.Drivers.Aera.ROD4):
     This is the same as Area ROD-4 since the communication protocols are iodentical.
     Separate class in case this might change
     """
+    def set_flow(self, channel, flow):
+        """Set desired flow"""
+        assert 0 <= flow <= 100 and 1 <= channel <= self.channels, 'Invalid channel or flow'
+        string = '{:02d}SFD{:3.1f}'.format(channel, flow)
+        with self.com_lock:
+            self.write(b'\x02')
+            self.write(string.encode())
+            self.write(b'\x0D')
+            answer = self.readline()
+            # Also accept empty string because some old thermolinos return no acknowledgment line
+            assert answer.decode in ('rec', ''), 'Invalid response from ROD4'
