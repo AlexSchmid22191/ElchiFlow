@@ -13,7 +13,7 @@ from src.Drivers.TestDevices import *
 from src.Engine.ThreadDecorators import Worker
 from src.Signals import signals_engine, signals_gui
 
-TEST_MODE = True
+TEST_MODE = False
 
 
 class MassflowControlEngine:

@@ -53,7 +53,7 @@ class ElchTitlebar(QWidget):
         vbox = QVBoxLayout()
         vbox.setContentsMargins(20, 20, 20, 20)
         vbox.setSpacing(10)
-        vbox.addWidget(QLabel('ElchiFlow 2.0', objectName='Header'), alignment=Qt.AlignHCenter)
+        vbox.addWidget(QLabel('ElchiFlow 2.0.1', objectName='Header'), alignment=Qt.AlignHCenter)
         vbox.addWidget(QLabel('License: CC-BY-SA 4.0'), alignment=Qt.AlignHCenter)
 
         icon = QLabel()
