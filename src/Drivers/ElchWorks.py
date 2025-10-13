@@ -50,4 +50,4 @@ class Ventolino(src.Drivers.Aera.ROD4):
             self.write(b'\x0D')
             answer = self.readline()
             # Also accept empty string because some old thermolinos return no acknowledgment line
-            assert answer.decode in ('rec', ''), 'Invalid response from ROD4'
+            assert answer in (b'rec\r\n', b''), f'Invalid response from ROD4 {answer.decode()}'
