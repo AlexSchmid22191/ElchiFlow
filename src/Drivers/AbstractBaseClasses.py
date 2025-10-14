@@ -28,10 +28,6 @@ class AbstractMassFlowController(abc.ABC):
     def read_set_flow(self, channel):
         pass
 
-    @abc.abstractmethod
-    def close(self):
-        pass
-
 
 class AbstractPressureSensor(abc.ABC):
     @abc.abstractmethod
