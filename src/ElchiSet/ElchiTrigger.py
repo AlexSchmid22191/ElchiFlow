@@ -56,13 +56,13 @@ def execute_preset(preset: dict, device_type, port) -> None:
         try:
             device.switch_valve(channel, value)
         except SerialException as e:
-            delayed_exit(f'Communication errorm when setting flow on channel {channel}: {e}')
+            delayed_exit(f'Communication error when setting channel {channel}: {e}')
         else:
             print(f'Set channel {channel} to {value}!')
 
 
 def main():
-    print('Hi! This is ElchiGas!')
+    print('Hi! This is ElchiTrigger!')
 
     parser = argparse.ArgumentParser(
         description='ElchiTrigger is a CLI application for switching Triggerboxes and Valve controllers!',

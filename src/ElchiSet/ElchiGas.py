@@ -57,7 +57,7 @@ def execute_preset(preset: dict, device_type, port) -> None:
         try:
             device.set_flow(int(channel), value)
         except SerialException as e:
-            delayed_exit(f'Communication errorm when setting flow on channel {channel}: {e}')
+            delayed_exit(f'Communication error when setting flow on channel {channel}: {e}')
         else:
             print(f'Set channel {channel} to {value} %')
 
