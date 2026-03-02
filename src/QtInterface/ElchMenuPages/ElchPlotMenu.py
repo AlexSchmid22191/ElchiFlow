@@ -19,8 +19,12 @@ class ElchPlotMenu(QWidget):
         vbox.addWidget(QLabel(text='Plotting', objectName='Header'))
         for key in controls:
             vbox.addWidget(self.buttons[key])
+            if key == 'Scale':
+                continue
             self.buttons[key].clicked.connect({'Start': functools.partial(self.start_stop_plotting),
-                                               'Clear': self.clear_pplot, 'Export': self.export_data}.get(key, None))
+                                               'Clear': self.clear_plot, 'Export': self.export_data,
+                                               'Scale': None}.get(key, None))
+
         vbox.addSpacing(20)
         vbox.addWidget(QLabel(text='Data sources', objectName='Header'))
         for key, button in self.checks.items():
@@ -38,7 +42,7 @@ class ElchPlotMenu(QWidget):
         else:
             signals_gui.stop_plot.emit()
 
-    def clear_pplot(self):
+    def clear_plot(self):
         signals_gui.clear_plot.emit()
         if self.buttons['Start'].isChecked():
             self.buttons['Start'].click()
